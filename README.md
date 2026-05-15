@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🐧 Portafolio de Sistemas Operativos
 
-## Getting Started
+Portafolio de evidencias
 
-First, run the development server:
+Este proyecto es una recopilación de las prácticas y conceptos teóricos abordados durante el curso de **Sistemas Operativos (Sexto Semestre)**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+El objetivo de este espacio es documentar el aprendizaje sobre el funcionamiento interno de los sistemas operativos, con un enfoque práctico en entornos **GNU/Linux**.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Tecnologías Utilizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Para el desarrollo de este portafolio web utilicé un stack moderno que permite una lectura fluida y un renderizado de código eficiente:
 
-## Learn More
+* **Framework:** [Next.js 15](https://nextjs.org/) (App Router)
+* **Lenguaje:** TypeScript
+* **Estilos:** Tailwind CSS + @tailwindcss/typography (para el formato de lectura)
+* **Contenido:** Markdown (MDX) para la documentación técnica.
+* **Lógica:** Node.js File System para la gestión dinámica de archivos por categorías.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📂 Estructura del Portafolio
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+El contenido está organizado en tres unidades fundamentales, accesibles desde la página principal:
 
-## Deploy on Vercel
+1.  **Introducción al Sistema:** Conceptos básicos de Linux, comandos de terminal y entorno de desarrollo.
+2.  **Procesos e Hilos:** Ciclo de vida de procesos, uso de la llamada al sistema `fork()`, estados zombi y manejo de hilos.
+3.  **Mecanismos IPC:** Comunicación entre procesos mediante Pipes, colas de mensajes y memoria compartida.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠️ Instalación y Ejecución
+
+Si deseas replicar este proyecto localmente, sigue estos pasos:
+
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone https://github.com/Eduardo-Raul/Portafolio-Sistemas-Operativos.git
+    ```
+2.  **Instalar dependencias:**
+    ```bash
+    npm install
+    ```
+3.  **Correr el servidor de desarrollo:**
+    ```bash
+    npm run dev
+    ```
+4.  **Ver en el navegador:** Abre [http://localhost:3000](http://localhost:3000).
+
+---
+
+## 📝 Cómo agregar nuevas prácticas
+
+Para añadir contenido, simplemente crea un archivo `.md` dentro de la subcarpeta correspondiente en `/content`:
+
+1.  Ve a `content/[nombre-de-categoria]/`.
+2.  Crea un archivo como `mi-practica.md`.
+3.  Añade el encabezado (*frontmatter*):
+    ```markdown
+    ---
+    title: "Título de la Práctica"
+    description: "Breve resumen"
+    ---
+    ```
+
+---
+
+## 👤 Autor
+
+* **José Canseco Eduardo Raúl 602-B** 
