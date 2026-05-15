@@ -9,7 +9,7 @@ export default function HomePage() {
         <h1 className="text-5xl font-black mb-4 text-slate-900 dark:text-white">
           Portafolio de Sistemas Operativos
         </h1>
-        <p className="text-xl text-blue-600 font-medium">Eduardo</p>
+        <p className="text-xl text-blue-600 font-medium">José Canseco Eduardo Raúl 602-B</p>
       </header>
 
       {/* PRÓLOGO */}

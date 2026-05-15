@@ -30,7 +30,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           {displayTitle}
         </h1>
         <p className="text-lg text-slate-600 dark:text-slate-400">
-          Evidencias y prácticas correspondientes a esta unidad temática.
+          Listado de temas vistos en esta unidad.
         </p>
       </header>
 

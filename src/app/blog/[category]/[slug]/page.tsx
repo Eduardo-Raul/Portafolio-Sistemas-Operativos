@@ -1,6 +1,6 @@
 // src/app/blog/[category]/[slug]/page.tsx
 import { getPostBySlug } from '@/lib/mdx';
-import { MDXRemote } from 'next-mdx-remote/rsc';
+import { MarkdownContent } from '@/components/markdown-content';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
@@ -12,7 +12,6 @@ export default async function PostPage({ params }: PageProps) {
   const { category, slug } = await params;
 
   try {
-    // Ahora pasamos ambos parámetros para encontrar el archivo
     const { content, frontmatter } = await getPostBySlug(category, slug);
 
     return (
@@ -22,7 +21,7 @@ export default async function PostPage({ params }: PageProps) {
           <p className="text-gray-500">{frontmatter.date}</p>
         </header>
         <div className="prose prose-slate lg:prose-xl dark:prose-invert max-w-none">
-          <MDXRemote source={content} />
+          <MarkdownContent source={content} />
         </div>
 
         <footer className="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800">

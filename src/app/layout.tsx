@@ -7,7 +7,7 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Eduardo | Portafolio SO",
+  title: "Portafolio SO",
   description: "Evidencias y prácticas de la materia de Sistemas Operativos",
 };
 
@@ -35,7 +35,7 @@ export default function RootLayout({
         </nav>
 
         {/* CONTENIDO PRINCIPAL */}
-        <main className="flex-grow">
+        <main className="grow">
           {children}
         </main>
 

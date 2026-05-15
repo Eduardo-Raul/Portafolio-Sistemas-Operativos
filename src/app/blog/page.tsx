@@ -13,7 +13,7 @@ export default async function AllPracticesPage() {
           Todas las Prácticas
         </h1>
         <p className="text-lg text-slate-600 dark:text-slate-400">
-          Listado completo de evidencias y laboratorios de Sistemas Operativos.
+          Listado completo de evidencias de los temas vistos en la materia de Sistemas Operativos.
         </p>
       </header>
 
